@@ -150,7 +150,7 @@
     grid-template-areas: 
     "one two thr"
     "for fiv six"
-    ".   .   .";
+    ".   sev   .";
 }
 
 .portfolio div{
@@ -173,15 +173,15 @@
 .portfolio button{
     margin: 2em 0;
     padding: 0.5em 0.5em;
-    border: none;
-    background-color: whitesmoke;
-    color: #212121;
+    border: 3px solid #3f51b5;
+    background-color: #3f51b5;
+    color: whitesmoke;
     font-size: 0.8em;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
 }
 
 .portfolio button:hover{
-    background-color: turquoise;
+    background-color: #3f51b5;
     color: whitesmoke;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
@@ -248,11 +248,18 @@
     background-repeat: no-repeat;
 }
 
-/* REACT PROJECTS */
-/* .project_seven{
+.project_seven{
     grid-area: sev;
+    background-image: url(./images/Weather.JPG);
+    object-fit: cover;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.project_eigth{
+
+/* REACT PROJECTS */
+
+/* .project_eigth{
     grid-area: eth;
 }
 .project_nine{
@@ -354,7 +361,7 @@ h2 {
         "for"
         "fiv"
         "six"
-        "."
+        "sev"
         "."
         ".";
     }
