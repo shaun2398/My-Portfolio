@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="parent.css">
+        <title>My Portfolio</title>
+    </head>
+    <body>
+        <div class="Container">
+            <header id="#" class="header">
+                <nav class="nav">
+                    <h2 id="title">MyPortfolio</h2>
+                    <ul id="ul" class="navLinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contacts">Contacts</a></li>
+                    </ul>
+                    <button id="hamburger"><i class="fas fa-bars"></i></button>
+                </nav>
+                <div class="home_text" id="home">
+                    <h1>Welcome!</h1>
+                    <p>I'm Shaun, front-end developer</p>
+                </div>
+            </header>
+            <main class="main">
+                <section class="about">
+                        <h2 id="about">About</h2>
+                        <img src="./images/zzzz-removebg-preview.png" alt="my picture" height="auto" width="200px"/>
+                        <p>
+                            I'm a self taught front-end developer from Sta. Ana, Manila. I've been learning HTML, CSS, Javascript and React ever since the start of quarantine.  Building small useful apps and converting web designs into code has become my hobby turn into passion. I enjoy learning new things on my own and can work with minimal supervision.
+                            My goal is to become a full time front-end developer and be equipped with the necessary skills to become part of the fast paced environment of web development industry. Below is the list of my skills:
+                        </p>
+                        <div class="skills">
+                            <i class="fab fa-html5"></i>
+                            <i class="fab fa-css3-alt"></i>
+                            <i class="fab fa-js-square"></i>
+                            <i class="fab fa-react"></i>
+                        </div>
+                </section>
+                <section id="projects" class="projects">
+                    <h2>Here are some of my works</h2>
+                    <br />
+                    <div class="portfolio">
+                        <a href="https://shaun2398.github.io/HTML-FORMS/" target="_blank">
+                            <div class="projects_one project"></div>
+                        </a>
+                        <a href="https://shaun2398.github.io/LandingPage/" target="_blank">
+                            <div class="project_two"></div>
+                        </a>
+                        <a href="https://shaun2398.github.io/Simple-Home-page/" target="_blank">
+                            <div class="project_three"></div>
+                        </a>
+                        <a href="https://shaun2398.github.io/Todolist/?" target="_blank">
+                            <div class="project_four"></div>
+                        </a>
+                        <a href="https://shaun2398.github.io/Rock-Paper-Scissors/" target="_blank">
+                            <div class="project_five"></div>
+                        </a>
+                        <a href="https://shaun2398.github.io/Simple-Covid-Tracker/" target="_blank">
+                            <div class="project_six"></div>
+                        </a>
+                        
+                    </div>
+                </section>
+            </main>
+            <section id="contacts" class="contacts">
+                <h2>Like what you see? Contact me!</h2>
+                <div class="contact_info">
+                    <i class="fas fa-envelope-square"></i>
+                    <div><p> shaunsanmiguel@gmail.com</p></div>
+                    <i class="fas fa-phone-square-alt"></i>
+                    <div><p>09668327823</p></div>
+                    <div class="icons">
+                        <a href="https://github.com/shaun2398" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/shaun-san-miguel-a315421ba/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="https://drive.google.com/file/d/1sXcTOLXA5siEPtZS5aIiYTGvq5GT55Ol/view?usp=sharing" target="_blank">
+                        <button>View My Resume</button>
+                    </a>
+                </div>
+            </section>
+            <footer class="footer">
+                <p>Copyright 2021  © My Portfolio by Shaugn Harvey San Miguel</p>
+            </footer>
+        </div>
+        <script src="https://kit.fontawesome.com/2f1c649cc2.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            const btn = document.getElementById('hamburger')
+            const showNavs = document.getElementById('ul');
+            btn.addEventListener('click', () => {
+                showNavs.classList.toggle('showLinks')
+            })
+
+            // SMOOTH SCROLL
+            const scroll = new SmoothScroll('nav a[href*="#"]', {
+                speed: 800
+            });
+        </script>
+        
+    </body>
+</html>
