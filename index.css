@@ -161,6 +161,7 @@
     align-items: flex-end;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     object-fit: cover;
+    background-color: transparent;
 }
 
 .portfolio div:hover{
@@ -179,24 +180,15 @@
     color: whitesmoke;
     font-size: 0.8em;
     padding: 1em;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.9);
+    transition: background-color 0.3s;
 }
 
 .portfolio button:hover{
     padding: 1.3em;
     background-color: turquoise;
-    /* background-color: #3f51b5; */
     color: whitesmoke;
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.projects_one{
-    grid-area: one;
-    background-image: url(./images/Capture.JPG);
-    object-fit: cover;
-    background-position: center top;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 .hideModal{
@@ -210,14 +202,20 @@
     align-items: center;
     color: white;
     background-color: rgba(31,31,31,0.8);
-    /* background-color: #212121; */
     height: 100%;
     width: 100%;
     border-radius: 12px;
-    transition: background-color 0.3s;
     font-size: 0.9rem;
 }
 
+.projects_one{
+    grid-area: one;
+    background-image: url(./images/Capture.JPG);
+    object-fit: cover;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .project_two{
     grid-area: two;
@@ -226,6 +224,7 @@
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    transition: background-image 0.3s;
 }
 .project_three{
     grid-area: thr;
