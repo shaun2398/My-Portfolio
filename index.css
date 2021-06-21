@@ -150,7 +150,7 @@
     grid-template-areas: 
     "one two thr"
     "for fiv six"
-    ".   sev   .";
+    "sev eth .";
 }
 
 .portfolio > div{
@@ -201,11 +201,11 @@
     justify-content: center;
     align-items: center;
     color: white;
-    background-color: rgba(31,31,31,0.8);
+    background-color: rgba(31,31,31, 0.9);
     height: 100%;
     width: 100%;
     border-radius: 12px;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .projects_one{
@@ -219,16 +219,16 @@
 
 .project_two{
     grid-area: two;
-    background-image: url(./images/Capture2.JPG);
+    background-image: url(./images/Capture3.JPG);
     object-fit: cover;
-    background-position: center;
+    background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
     transition: background-image 0.3s;
 }
 .project_three{
     grid-area: thr;
-    background-image: url(./images/Capture3.JPG);
+    background-image: url(./images/Capture2.JPG);
     object-fit: cover;
     background-position: center bottom;
     background-size: cover;
@@ -268,12 +268,19 @@
     background-repeat: no-repeat;
 }
 
-/* REACT PROJECTS */
-
-/* .project_eigth{
+.project_eigth{
     grid-area: eth;
+    background-image: url(./images/currencyReact.JPG);
+    object-fit: cover;
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-.project_nine{
+
+/* REACT PROJECTS */
+/* 
+
+/* .project_nine{
     grid-area: nin;
 } */
 
@@ -374,7 +381,7 @@ h2 {
         "fiv"
         "six"
         "sev"
-        "."
+        "eth"
         ".";
     }
     .contacts{
